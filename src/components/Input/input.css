@@ -1,0 +1,86 @@
+.input_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: .6rem;
+    border-radius: 5px;
+    border: 1px solid var(--grey100);
+    transition: border .25s ease-in;
+}
+
+.input_container:focus-within {
+    border: 1px solid var(--grey500);
+    outline: var(--grey500);
+    transition: border .25s ease-in;
+}
+
+.input_error, .input_error:focus-within {
+    color: red;
+    border-color: red;
+    transition: border .25s ease-in;
+}
+
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+}
+
+.input {
+    border: 0;
+    padding: .3rem 0;
+}
+
+.input:focus {
+    border: 0;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--grey500);
+}
+
+.input_label {
+    color: var(--navyblue);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.input_icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.input_icon svg {
+    color: var(--grey500);
+}
+
+.input_country_code {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    /*  */
+}
+
+.input_country_code::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    right: 0;
+    border-right: 1px solid var(--grey100);
+}
