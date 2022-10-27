@@ -5,7 +5,6 @@ import { isValidEmail, isValueEmpty, isValidNumber } from '../helper/formValidat
 
 export default function CompanyInfo() {
     const { companyData, setCompanyData, errors, setErrors } = useStepper();
-    // console.log(companyData);
     function handleChange(e) {
         let type = e.target.type;
         let name = e.target.name;
