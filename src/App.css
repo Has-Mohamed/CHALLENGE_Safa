@@ -1,31 +1,3 @@
 .App {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-}
-
-#signupForm {
-    /* width: 800px; */
-    max-width: 100%;
-}
-
-.final_step {
-    text-align: center;
-}
-
-.final_step img {
-    position: relative;
-    display: block;
-    margin: 1rem auto;
-    width: 160px;
-    max-width: 100%;
-    min-width: 120px;
-}
-
-.final_step_message {
-    margin-bottom: 0;
-    color: var(--red500);
+  text-align: center;
 }
