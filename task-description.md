@@ -27,9 +27,9 @@ Note: you can skip image step .
 
 ## Evaluation Criteria
 
--   Please organize, design and document your code as if it were going into production.
--   Push your changes to the master branch.
--   Please do one or more commits per tasks and provide a commit description as if it was a pull request.
+- Please organize, design and document your code as if it were going into production.
+- Push your changes to the master branch.
+- Please do one or more commits per tasks and provide a commit description as if it was a pull request.
 
 All the best and happy coding,
 

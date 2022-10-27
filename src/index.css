@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --grey50: #f4f4f4;
+    --grey100: #EAE8E9;
+    --grey500: #9E9E9E;
+    --navyblue: #4B5A6B;
+    --red500: #FF5F59;
+    --blue300: #1777FB;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: var(--grey50);
+}
+
+/* utility classes */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-gap {
+    gap: .5rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: calc(50% - .5rem);
+}
+
+.form-group {
+    position: relative;
+    margin: 1em 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-lt {
+    font-weight: 300;
+}
+
+.text-rg {
+    font-weight: 400;
+}
+
+.text-bl {
+    font-weight: 700;
+}
+
+.text-extra-bl {
+    font-weight: 900;
+}
+
+.text-lg {
+    font-size: 1.2em;
+}
+
+.text-md {
+    font-size: 1em;
+}
+
+.text-sm {
+    font-size: .8em;
+}
+
+.btn {
+    position: relative;
+    padding: .7rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    user-select: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--blue300);
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: var(--grey100);
+    color: #ACACAC;
+}
+
+.btn:disabled, .btn[disabled] {
+    opacity: 0.65;
+}
+
+.btn-lg {
+    padding: .7rem 6rem;
+}
+
+.mx-1 {
+    margin: 0 .6rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 750px;
+    }
+
+    .w-50 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

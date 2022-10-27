@@ -1,0 +1,89 @@
+.stepper_container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.step {
+    position: relative;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.indicator_container {
+    position: relative;
+    width: 100%;
+}
+
+.indicator_icons {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.2rem 0;
+}
+
+.indicator_icon {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    color: var(--grey500);
+    border-radius: 50%;
+    border: 2px solid var(--grey100);
+}
+
+.indicator_icon.active {
+    color: var(--red500);
+    border-color: var(--red500);
+    background-color: #fff;
+    transition: all .75s ease;
+}
+
+.indicator_icon.finished {
+    color: var(--blue300);
+    border-color: var(--blue300);
+    background-color: #fff;
+    transition: all .75s ease;
+}
+
+.progress_container {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 5px;
+    background-color: var(--grey100);
+    transition: width .35s ease;
+}
+
+.progressbar.fill {
+    width: 0;
+    position: absolute;
+    height: 5px;
+    background-color: var(--blue300);
+    z-index: 2;
+    transition: width .35s ease;
+}
+
+.fill-50 {
+    width: 50%;
+    transition: width .35s ease;
+}
+
+.fill-100 {
+    width: 100%;
+    transition: width .35s ease;
+}
+
+.stepper_btns {
+    display: flex;
+    justify-content: end;
+    float: right;
+}
