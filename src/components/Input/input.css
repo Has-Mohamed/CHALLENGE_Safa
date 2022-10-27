@@ -9,6 +9,7 @@
     border-radius: 5px;
     border: 1px solid var(--grey100);
     transition: border .25s ease-in;
+    overflow: hidden;
 }
 
 .input_container:focus-within {
@@ -21,6 +22,14 @@
     color: red;
     border-color: red;
     transition: border .25s ease-in;
+}
+
+.input_error .input_label {
+    color: var(--red500);
+}
+
+.input_error_text {
+    font-size: .8rem;
 }
 
 .input_wrapper {

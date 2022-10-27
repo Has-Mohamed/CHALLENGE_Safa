@@ -38,7 +38,7 @@ const Input = forwardRef((props, ref) => {
 
             </div>
             {/* validation error */}
-            {error && <div className="input_error">error</div>}
+            {error && <div className="input_error input_error_text">{error}</div>}
         </div >
     )
 });
