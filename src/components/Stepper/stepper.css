@@ -6,7 +6,7 @@
 .step {
     position: relative;
     background-color: #fff;
-    padding: .5rem 1rem;
+    padding: 1.5rem 1rem;
     margin: 1rem 0;
     border-radius: 10px;
 }
@@ -42,14 +42,14 @@
     color: var(--red500);
     border-color: var(--red500);
     background-color: #fff;
-    transition: width .35s ease;
+    transition: all .75s ease;
 }
 
 .indicator_icon.finished {
     color: var(--blue300);
     border-color: var(--blue300);
     background-color: #fff;
-    transition: width .35s ease;
+    transition: all .75s ease;
 }
 
 .progress_container {
