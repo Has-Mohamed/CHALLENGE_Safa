@@ -81,3 +81,9 @@
     width: 100%;
     transition: width .35s ease;
 }
+
+.stepper_btns {
+    display: flex;
+    justify-content: end;
+    float: right;
+}
