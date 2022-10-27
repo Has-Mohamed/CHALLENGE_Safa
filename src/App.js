@@ -1,13 +1,16 @@
 import { Stepper } from './components/Stepper';
-import { useStepper } from './context/StepperContext';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import ThanksPage from './components/ThanksPage';
 
 function App() {
-    const { totalSteps, currentStep, setCurrentStep } = useStepper();
     return (
         <div className="App container">
-            <Stepper totalSteps={totalSteps} currentStep={currentStep} setCurrentStep={setCurrentStep} />
-        </div>
+            <Routes>
+                <Route path='/' element={<Stepper />} />
+                <Route path='/congratz' element={<ThanksPage />} />
+            </Routes>
+        </div >
     );
 }
 
