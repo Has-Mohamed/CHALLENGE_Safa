@@ -55,11 +55,22 @@ body {
 .form-group {
     position: relative;
     margin: 1em 0;
-    overflow: hidden;
 }
 
 .text-center {
     text-align: center;
+}
+
+.text-lt {
+    font-weight: 300;
+}
+
+.text-rg {
+    font-weight: 400;
+}
+
+.text-sm {
+    font-size: .8em;
 }
 
 @media (max-width: 768px) {
